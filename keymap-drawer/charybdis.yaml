@@ -39,8 +39,8 @@ layers:
   - SCRL SLOW
   - L CLK
   - {t: BACK SPACE, h: NUM}
-  - {t: RETURN, h: MOUSE}
-  - {t: SPACE, h: SYM}
+  - {t: SPACE, h: MOUSE}
+  - {t: ENTER, h: SYM}
   NUM:
   - {t: ▽, type: trans}
   - ''
@@ -261,7 +261,7 @@ layers:
   - WHEEL U
   - WHEEL R
   - ''
-  - ''
+  - ZMK Studio
   - ''
   - ''
   - ''
