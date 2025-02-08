@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
   - A
   - {t: S, h: LEFT ALT}
@@ -23,7 +23,7 @@ layers:
   - {t: K, h: RIGHT GUI}
   - {t: L, h: RIGHT ALT}
   - ;
-  - {t: ▽, type: trans}
+  - ''''
   - {t: ▽, type: trans}
   - Z
   - X
@@ -35,7 +35,7 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
+  - RSHIFT
   - {t: ESC, h: mac_numpad}
   - {t: TAB, h: mac_nav}
   - BACK SPACE
