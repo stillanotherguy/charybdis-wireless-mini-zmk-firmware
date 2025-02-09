@@ -25,7 +25,7 @@ layers:
   - ;
   - ''
   - ''
-  - Z
+  - {t: Z, h: LSHIFT}
   - X
   - C
   - V
@@ -34,8 +34,8 @@ layers:
   - M
   - ','
   - .
-  - /
-  - RSHIFT
+  - {t: /, h: RSHIFT}
+  - ''
   - {t: ESC, h: mac_numpad}
   - {t: TAB, h: mac_nav}
   - BACK SPACE
