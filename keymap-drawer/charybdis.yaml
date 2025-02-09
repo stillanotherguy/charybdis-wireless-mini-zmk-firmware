@@ -1,6 +1,6 @@
 layers:
   mac_default:
-  - {t: ▽, type: trans}
+  - ''
   - Q
   - W
   - E
@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - '-'
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - A
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
@@ -23,8 +23,8 @@ layers:
   - {t: K, h: RIGHT GUI}
   - {t: L, h: RIGHT ALT}
   - ;
-  - ''''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -95,7 +95,7 @@ layers:
   - '8'
   - '9'
   - '-'
-  - '='
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -137,7 +137,7 @@ layers:
   - '*'
   - (
   - )
-  - '='
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
