@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   mac_default:
   - ''
@@ -246,8 +247,8 @@ layers:
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - M CLK
   - L CLK
+  - '&td_clk_scrl'
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
