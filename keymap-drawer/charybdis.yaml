@@ -39,7 +39,7 @@ layers:
   - {t: ESC, h: mac_numpad}
   - {t: TAB, h: mac_nav}
   - BACK SPACE
-  - SPACE
+  - {t: SPACE, h: mac_function}
   - {t: ENTER, h: mac_symbol}
   mac_nav:
   - {t: ▽, type: trans}
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   mac_numpad:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BOOT LDR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,7 +207,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   mac_mouse:
   - {t: ▽, type: trans}
