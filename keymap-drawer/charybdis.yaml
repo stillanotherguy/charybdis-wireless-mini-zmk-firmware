@@ -27,7 +27,7 @@ layers:
   - ''
   - {t: Z, h: LSHIFT}
   - X
-  - C
+  - {t: C, h: mac_mouse}
   - V
   - B
   - N
@@ -237,12 +237,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - {type: held}
+  - {t: ▽, type: trans}
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
