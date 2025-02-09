@@ -178,7 +178,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BOOT LDR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F11
