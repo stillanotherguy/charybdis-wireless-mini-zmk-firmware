@@ -49,7 +49,7 @@ west list
 echo "📁 Copying source keymaps from $CONFIG_PATH to temporary directory"
 KEYMAP_TEMP="/tmp/keymaps"
 rm -rf "$KEYMAP_TEMP" && mkdir -p "$KEYMAP_TEMP"
-cp "$REPO_ROOT/$CONFIG_PATH/keymap"/*.keymap "$KEYMAP_TEMP/"
+cp "$REPO_ROOT/$CONFIG_PATH/"*.keymap "$KEYMAP_TEMP/"
 
 # Generate additional keymaps and adjust names
 # echo "🔧 Generating additional keymaps"
@@ -114,8 +114,8 @@ setup_sandbox() {
   cp -r "$REPO_ROOT/." "$BUILD_REPO/"
   cd "$BUILD_REPO"
   
-  # Move the keymap files (macros, combos, etc) to the partent config directory
-  mv "$BUILD_REPO/config/keymap/"* "$BUILD_REPO/config/"
+  # .keymap files are now in config/ already, .dtsi files remain in config/keymap/
+  # No file moving needed
 
   # Determine module mode, set BASE_DIR, copy user config
   if [ -f zmk/module.yml ]; then

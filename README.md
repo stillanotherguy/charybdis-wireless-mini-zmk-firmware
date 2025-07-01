@@ -85,7 +85,7 @@ This section will help you personalize your firmware. Everything—from keys and
 By default both Bluetooth and Dongle formats will build firmware pairs for the QWERTY, Coleman DH, and Graphite keymaps. To save time and streamline your builds, you can build just a single keymap or shield that you're interested in:
 
 **Single keymap:**
-Delete any `.keymap` files you don't need from `config/keymap/`, leaving only your desired keymap(s). The build process specifically looks for a file named `charybdis.keymap`. If you prefer another layout instead of the default QWERTY, simply rename your chosen keymap to `charybdis.keymap`.
+Delete any `.keymap` files you don't need from `config/`, leaving only your desired keymap(s). The build process specifically looks for a file named `charybdis.keymap`. If you prefer another layout instead of the default QWERTY, simply rename your chosen keymap to `charybdis.keymap`.
 
 
 **Single shield format (Dongle or Bluetooth):**
@@ -121,7 +121,7 @@ Using a GUI to generate the keymap file before building the firmware is another 
 
 To change a key layout choose a behavior you'd like to assign to a key, then choose a parameter code. This process is more clearly outlined on ZMK's [Keymaps & Behaviors](https://zmk.dev/docs/features/keymaps) page. All keycodes are documented [here](https://zmk.dev/docs/codes) page
 
-Open the config/keymap/charybdis.keymap file and change keys, or add/remove layers, then merge the changes and re-flash the keyboard with the updated firmware.
+Open the config/charybdis.keymap file and change keys, or add/remove layers, then merge the changes and re-flash the keyboard with the updated firmware.
 
 
 ### Modifying Trackball Behavior
