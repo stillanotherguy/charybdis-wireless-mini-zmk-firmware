@@ -91,16 +91,16 @@ jobs:
         fi
 
         # Create overlays directory inside zmk/app
-        mkdir -p zmk/app/overlays
+        mkdir -p zmk/app/overlays/keymap
 
         # Only for bt/dongle builds, copy in the single keymap and any helpers
         if [[ "${{ matrix.combo.format }}" != "reset" ]]; then
           cp config/${{ matrix.combo.keymap }}.keymap \
              zmk/app/overlays/charybdis.keymap
 
-          # copy helper .dtsi files if they exist
+          # copy helper .dtsi files preserving directory structure
           cp config/*.dtsi zmk/app/overlays/ 2>/dev/null || true
-          cp config/keymap/*.dtsi zmk/app/overlays/ 2>/dev/null || true
+          cp config/keymap/*.dtsi zmk/app/overlays/keymap/ 2>/dev/null || true
         fi
 
     # ───────── patch the PMW3610 driver that West checked out ─────────
