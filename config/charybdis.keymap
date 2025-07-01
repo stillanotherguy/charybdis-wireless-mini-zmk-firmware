@@ -77,7 +77,8 @@
             quick-tap-ms = <150>; // If you press a tapped hold-tap again within quick-tap-ms milliseconds of the first press, it will always trigger the tap behavior.
             require-prior-idle-ms = <185>; // like quick-tap-ms however it will apply for any non-modifier key pressed before it
             bindings = <&kp>, <&kp>;
-  // hold, tap
+
+            // hold, tap
         };
 
         // Left-hand HRM
@@ -115,7 +116,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <125>;
             bindings = <&lt 8 ESC>, <&mo 7>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         td_space_nav: td_space {
@@ -123,7 +125,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <120>;
             bindings = <&lt 2 SPACE>, <&kp SPACE>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         td_bs: td_bs {
@@ -131,7 +134,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <115>;
             bindings = <&lt 1 BACKSPACE>, <&kp BACKSPACE>;
- // hold, tap, double_tap
+
+            // hold, tap, double_tap
         };
 
         httl: ht_two_layers {
@@ -147,7 +151,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 4>;
- // tap, double_tap
+
+            // tap, double_tap
         };
 
         td_clk_scrl: td_click_or_scroll {
@@ -155,7 +160,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&mkp RCLK>, <&mo 8>;
-  // tap/hold, double_tap
+
+            // tap/hold, double_tap
         };
 
         td_bore: BASE_or_EXTRA {
@@ -433,10 +439,10 @@
 
         SYM {
             bindings = <
-&none      &none     &none     &none     &kp TILDE  &none       &kp PLUS      &code_blk  &kp LBKT  &kp RBKT  &kp PRCNT     &kp AT
-&kp CARET  &kp HASH  &kp LPAR  &kp RPAR  &kp UNDER  &kp AMPS    &kp EQUAL     &kp GRAVE  &kp LBRC  &kp RBRC  &kp ASTRK     &kp DLLR
-&none      &none     &none     &none     &home_dir  &none       &kp KP_MINUS  &kp PIPE   &kp LT    &kp GT    &kp KP_SLASH  &kp BSLH
-                               &none     &trans     &none       &trans        &trans
+&none      &none     &none     &none     &kp TILDE  &kp CARET    &kp PLUS      &code_blk  &kp LBKT  &kp RBKT  &kp PRCNT     &kp AT
+&kp CARET  &kp HASH  &kp LPAR  &kp RPAR  &kp UNDER  &kp AMPS     &kp EQUAL     &kp GRAVE  &kp LBRC  &kp RBRC  &kp ASTRK     &kp DLLR
+&none      &none     &none     &none     &home_dir  &none        &kp KP_MINUS  &kp PIPE   &kp LT    &kp GT    &kp KP_SLASH  &kp BSLH
+                               &none     &trans     &none        &trans        &trans
             >;
         };
 
@@ -452,7 +458,7 @@
         EXTRAS {
             bindings = <
 &studio_unlock   &shrug         &lgtm         &gcm           &none           &kp C_BRIGHTNESS_INC    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &out OUT_TOG     &bt BT_CLR
-&kp C_SLEEP      &sudo          &none         &none          &none           &kp C_BRIGHTNESS_DEC    &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_STOP       &kp C_NEXT       &none
+&kp C_SLEEP      &sudo          &none         &none          &none           &kp C_BRIGHTNESS_DEC    &bt BT_CLR    &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_STOP       &kp C_NEXT       &none
 &kp C_AL_COFFEE  &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &none                   &new_dir      &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN  &none
                                               &none          &none           &none                   &none         &none
             >;
