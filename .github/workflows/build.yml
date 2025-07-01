@@ -27,13 +27,10 @@ jobs:
     - name: OS deps
       run: sudo apt-get update && sudo apt-get install -y jq
 
-    - name: Generate extra keymaps
-      run: |
-        echo "⚙️ Generating additional keymaps"
-        mv config/charybdis.keymap config/qwerty.keymap
-
     - name: Build-matrix JSON
-      run: python scripts/generate_matrix.py > build.json
+      run: |
+        echo "⚙️ Generating build matrix (keymaps are now in config/)"
+        python scripts/generate_matrix.py > build.json
 
     - id: make-groups
       run: |
@@ -83,12 +80,16 @@ jobs:
         echo "👀 West workspace ready. Project structure:"
         west list
 
-    # ───────── keymaps are now part of the repo ─────────
-
-    # ───────── stage keymaps and helper files ─────────
-    - name: Stage keymaps, overlays, and dtsi files into source tree
+    # ───────── Generate additional keymaps and stage files ─────────
+    - name: Generate keymaps and stage into source tree
       shell: bash
       run: |
+        # Generate additional keymaps if needed
+        if [[ ! -f "config/qwerty.keymap" && -f "config/charybdis.keymap" ]]; then
+          echo "⚙️ Generating qwerty.keymap from charybdis.keymap"
+          cp config/charybdis.keymap config/qwerty.keymap
+        fi
+
         # Create overlays directory inside zmk/app
         mkdir -p zmk/app/overlays
 
