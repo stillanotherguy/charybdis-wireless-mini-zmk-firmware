@@ -23,7 +23,7 @@ draw_config:
   # Composite-only corner legend wraps for render_stacked_composite.js.
   # This does not affect keymap-drawer SVG output directly.
   composite_corner_legend_wrap_overrides:
-    - keypos: 34
+    - keypos: 29
       corner: tl
       from: "SCREEN SHOT"
       lines: ["SCREEN", "SHOT"]
@@ -31,7 +31,7 @@ draw_config:
       line_height_em: 1.05
       x_offset: 0
       y_offset: 2
-    - keypos: 30
+    - keypos: 25
       corner: tl
       from: "NEW DIR"
       lines: ["NEW", "DIR"]
@@ -39,15 +39,7 @@ draw_config:
       line_height_em: 1.05
       x_offset: 0
       y_offset: 2
-    - keypos: 00
-      corner: tl
-      from: "ZMK Studio"
-      lines: ["ZMK", "STUDIO"]
-      tspan_style: "font-size: 90%"
-      line_height_em: 1.05
-      x_offset: 0
-      y_offset: 2
-    - keypos: 04
+    - keypos: 03
       corner: br
       from: "MV LN \uf0d8"
       lines: ["Line", "\uf0d8"]
@@ -55,7 +47,7 @@ draw_config:
       line_height_em: 1.05
       x_offset: 0
       y_offset: -2
-    - keypos: 28
+    - keypos: 23
       corner: br
       from: "MV LN \uf0d7"
       lines: ["Line", "\uf0d7"]
@@ -63,18 +55,10 @@ draw_config:
       line_height_em: 1.05
       x_offset: 0
       y_offset: -2
-    - keypos: 03
+    - keypos: 02
       corner: tl
       from: "GIT COMMIT"
       lines: ["GIT", "COMMIT"]
-      tspan_style: "font-size: 90%"
-      line_height_em: 1.05
-      x_offset: 0
-      y_offset: 2
-    - keypos: 04
-      corner: tl
-      from: "GIT PUSH"
-      lines: ["GIT", "PUSH"]
       tspan_style: "font-size: 90%"
       line_height_em: 1.05
       x_offset: 0

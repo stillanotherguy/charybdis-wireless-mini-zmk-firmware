@@ -3,7 +3,7 @@
 #include "../../config/trackball/charybdis_pointer.dtsi"
 
 
-// The matrix transform is 6 columns over because the left half is 6 columns wide.
+// The matrix transform is 5 columns over because the left half is 5 columns wide.
 &default_transform {
 	col-offset = <6>;
 };
