@@ -273,22 +273,18 @@ parse_config:
     C_NEXT: "󰼧"
     SPACE: "󱁐"
   raw_binding_map:
-    # --- Hold-tap / Home Row Mods (legacy + shared) ---
-    "&ht_left LCMD A":          {t: A,     h: "Gui"}
-    "&ht_left LALT S":          {t: S ,    h: "Alt"}
-    "&ht_left LSHFT D":         {t: D,     h: "Shift"}
-    "&ht_left LCTRL F":         {t: F,     h: "Ctrl"}
-    "&ht_right RCTRL J":        {t: J,     h: "Ctrl"}
-    "&ht_right RSHFT K":        {t: K,     h: "Shift"}
-    "&ht_right LALT L":         {t: L,     h: "Alt"}
-    "&ht_right RCMD SEMICOLON": {t: ";",   h: "Gui"}
-
-    # --- Tap-preferred right-hand variants ---
-    "&ht_right_tp LALT L":      {t: L,     h: "Alt"}
-    "&ht_right_tp RCMD SEMICOLON": {t: ";", h: "Gui"}
-    "&ht_right_tp LALT I":      {t: I,     h: "Alt"}
-    "&ht_right_tp RCMD O":      {t: O,     h: "Gui"}
-    "&ht_left_tp LCMD A":       {t: A,     h: "Gui"}
+    # --- Hold-tap / Home Row Mods ---
+    "&ht_left LALT S":                    {t: S,   h: "Alt"}
+    "&ht_left_tp LCMD D":                 {t: D,   h: "Gui"}
+    "&ht_left LCTRL F":                   {t: F,   h: "Ctrl"}
+    "&ht_left LSHFT Z":                   {t: Z,   h: "Shift"}
+    "&ht_right LS(LC(LA(LGUI))) J":       {t: J,   h: "Hyper"}
+    "&ht_right RSHFT K":                  {t: K,   h: "Shift"}
+    "&ht_right_tp LALT L":                {t: L,   h: "Alt"}
+    "&ht_right_tp RCMD SEMICOLON":        {t: ";", h: "Gui"}
+    "&ht_right_tp LALT I":                {t: I,   h: "Alt"}
+    "&ht_right_tp RCMD O":                {t: O,   h: "Gui"}
+    "&ht_left_tp LCMD A":                 {t: A,   h: "Gui"}
 
     # --- Tap Dance ---
     "&td_clk": {t: "SYM LFT-CLK", type: thumb}
