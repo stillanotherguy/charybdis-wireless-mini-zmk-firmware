@@ -313,7 +313,7 @@ text.br  { font-family: "JetBrainsMono Nerd Font"; fill: var(--all-corner); font
 </g>
 <g transform="translate(950, 234)" class="key keypos-29">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key"/>
-<text x="0" y="0" class="key tap">?</text>
+<text x="0" y="0" class="key tap">/</text>
 <text x="0" y="34" class="key hold">RSHFT</text>
 </g>
 <g transform="translate(226, 276)" class="key thumb keypos-30">
