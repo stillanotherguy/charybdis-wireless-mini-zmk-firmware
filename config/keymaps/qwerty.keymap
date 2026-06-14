@@ -62,7 +62,7 @@
 //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
     &kp Q            &kp W            &kp E             &kp R             &kp T    &kp Y   &kp U              &kp I              &kp O             &kp P
     &kp A               &ht_left LALT S  &ht_left_tp LCMD D  &ht_left LCTRL F  &kp G    &kp H   &ht_right LS(LC(LA(LGUI))) J  &ht_right_tp RCMD K  &ht_right_tp LALT L  &kp SEMICOLON
-    &ht_left LSHFT Z  &kp X            &kp C             &kp V             &kp B    &kp N   &kp M              &mm_cm_sc          &mm_pr_col        &ht_right RSHFT QUESTION
+    &ht_left LSHFT Z  &kp X            &kp C             &kp V             &kp B    &kp N   &kp M              &mm_cm_sc          &mm_pr_col        &ht_right RSHFT FSLH
                                              &td_esc_scrl_slow   &td_clk  &bs_num 1 BACKSPACE   &kp ENTER  &td_space_nav
             >;
         };

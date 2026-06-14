@@ -281,7 +281,7 @@ parse_config:
     "&ht_right LS(LC(LA(LGUI))) J":       {t: J,   h: "Hyper"}
     "&ht_right_tp RCMD K":                {t: K,   h: "Gui"}
     "&ht_right_tp LALT L":                {t: L,   h: "Alt"}
-    "&ht_right RSHFT QUESTION":           {t: "?", h: "Shift"}
+    "&ht_right RSHFT FSLH":               {t: "/", h: "Shift"}
     "&ht_right_tp LALT I":                {t: I,   h: "Alt"}
     "&ht_right_tp RCMD O":                {t: O,   h: "Gui"}
     "&ht_left_tp LCMD A":                 {t: A,   h: "Gui"}
