@@ -19,13 +19,3 @@ include:
       - charybdis_right_bt
     keymap:
       - qwerty
-
-# ── Standard Dongle Firmwares ─────────────────────────────────────────────────
-  - name: dongle_standard_nano
-    board: nice_nano//zmk
-    shield:
-      - charybdis_left_dongle
-      - charybdis_right_dongle
-      - charybdis_dongle
-    keymap:
-      - qwerty
